@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.BOLO"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+<uses-permission android:name="android.permission.BLUETOOTH" />
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.example.BOLO.MyApplication">
+        <activity
+            android:name="com.example.BOLO.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.BOLO.Home"
+            android:label="@string/title_activity_home" >
+            <intent-filter>
+                <action android:name="android.intent.action.HOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.BOLO.AddDevice"
+            android:label="@string/title_activity_add_device" >
+            <intent-filter>
+                <action android:name="android.intent.action.AddDevice" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.BOLO.AddCommand"
+            android:label="@string/title_activity_add_command" >
+            <intent-filter>
+                <action android:name="android.intent.action.AddCommand" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.BOLO.Command"
+            android:label="@string/title_activity_command" >
+            <intent-filter>
+                <action android:name="android.intent.action.Command" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.BOLO.Voice"
+            android:label="@string/title_activity_voice" >
+            <intent-filter>
+                <action android:name="android.intent.action.Voice" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.BOLO.MyActivity" >
+			     <intent-filter>
+                <action android:name="android.intent.action.MyActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.example.BOLO.MyCustomAdapter" >
+             <intent-filter>
+                <action android:name="android.intent.action.MyCustomAdapter" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.BOLO.Parent" >
+             <intent-filter>
+                <action android:name="android.intent.action.Parent" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.example.BOLO.CustomOnItemSelectedListener" >
+              <intent-filter>
+                <action android:name="android.intent.action.CustomOnItemSelectedListener" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
+       
+    </application>
+
+</manifest>
